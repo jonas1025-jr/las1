@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+nav img {
+  height: 34px;
+  width: 176px;
+  object-fit: contain;
+  margin-left: 40px;
+}
+nav > a {
+  background: #fff;
+  text-decoration: none;
+  margin-right: 100px;
+  padding: 18px 24px;
+  cursor: pointer;
+}
+.nav__right > a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.nav__right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 40px;
+}
+
+/* Home Screen Styles */
+
+.homescreen {
+  height: 256vh;
+  background-image: url("./images/Rectangle.png");
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+
+.homescreen > img {
+  height: 580px;
+  width: 80vw;
+  object-fit: contain;
+  margin-top: 280px;
+}
+.homescreen__text {
+  display: flex;
+  margin-top: 20%;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.homescreen__text > h1 {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  color: #fff;
+}
+.homescreen__text > span {
+  width: 772px;
+  letter-spacing: 0.03em;
+  color: #eee;
+  margin: 30px;
+}
+
+.text__buttons {
+  display: flex;
+  align-items: center;
+}
+.text__buttons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: 20px;
+  width: 200px;
+  text-decoration: none;
+  color: #fff;
+}
+.text__buttons > .text__white {
+  background: #fff;
+  color: #aa0ab2;
+}
+.text__buttons > .border__white {
+  border: 1px solid #fff;
+}
+
+/* Introduction Screen */
+
+.introduction__screen {
+  padding-top: 70px;
+  height: 185vh;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.introduction__screen > .purpledoveimg__right {
+  margin-right: 75px;
+}
+.intro__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.intro__left h2 {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: 600;
+}
+.intro__left span {
+  width: 70%;
+  color: #848080;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.intro__left > a {
+  align-self: flex-start;
+  padding-left: 7rem;
+}
+
+.introduction__screen > .purpledoveimg__right {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.mirror {
+  position: absolute;
+  bottom: 0;
+  height: 560.5px;
+  width: 100%;
+}
+
+.rotate {
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+  height: 200px;
+}
+
+.rotate.image-1 {
+  transform: rotate(-10deg);
+}
+
+.introduction__list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 80px;
+  right: 38px;
+  gap: 30px;
+}
+
+.introduction__list h2 {
+  color: #fff;
+}
+.introduction__list li {
+  padding: 10px;
+  color: #e2e2e2;
+}
+
+.services__section {
+  height: 230vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+}
+
+.services__cards {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card > img {
+  height: 50px;
+}
+
+.card h2 {
+  color: #aa0ab2;
+  font-size: 18px;
+}
+
+.card span {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(116, 113, 113);
+}
+
+.services__bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__bottom-left > h2 {
+  font-size: 32px;
+  color: #fff;
+}
+.services__bottom {
+  position: absolute;
+  bottom: 3px;
+  display: flex;
+  padding: 30px;
+}
+
+.bottom__info {
+  display: flex;
+  width: 600px;
+  align-self: flex-start;
+}
+.bottom__info h3 {
+  font-size: 16px;
+  color: #eee;
+  padding: 15px;
+}
+
+.services__bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.services__bottom-right > img {
+  height: 200px;
+}
+.services__bottom-right > a {
+  background: #fff;
+  padding: 1rem 2rem;
+  width: 190px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.services__info {
+  width: 270px;
+  padding: 20px;
+  color: #d8cece;
+}
+
+.mirror__img {
+  height: 560.6px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Purple Dove Videos */
+
+.purpleDOVE__videos {
+  height: 100vh;
+}
+
+.videos__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30px;
+}
+.videos__header > span {
+  font-size: 23px;
+  font-weight: 600;
+  margin-right: 100px;
+  opacity: 0.7;
+}
+.videos__body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 28px;
+}
+.videos__groups {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: #aa0ab2;
+}
+
+.videos__body > img {
+  height: 233px;
+}
